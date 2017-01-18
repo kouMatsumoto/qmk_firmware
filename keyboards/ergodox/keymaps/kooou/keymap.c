@@ -34,7 +34,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        | L1   | L2   |       | L2   | L1   |
  *                                 ,------|------|------|       |------+--------+------.
  *                                 |      |      | L3   |       | L3   |        |      |
- *                                 | Enter| BkSp |------|       |------| Up     | Down |
+ *                                 | Enter| Esc  |------|       |------| Up     | Down |
  *                                 |      |      | L4   |       | L4   |        |      |
  *                                 `--------------------'       `----------------------'
  */
@@ -49,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         MO(SYMB), KC_LALT,  KC_LGUI, MO(SYMB), KC_SPC,
         TG(SYMB), TG(NPAD),
                             TG(MDIA),
-        KC_ENT,   KC_BSPC,  TG(OTHR),
+        KC_ENT,   KC_ESC,   TG(OTHR),
 
 
         // right hand
