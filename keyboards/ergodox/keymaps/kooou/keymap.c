@@ -62,16 +62,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TG(MDIA),
         TG(OTHR), KC_UP,    KC_DOWN
     ),
+
 /* Keymap 1: Symbol Layer
  *
  * ,---------------------------------------------------.           ,--------------------------------------------------.
- * |         |  F1  |  F2  |  F3  |  F4  |  F5  |      |           |      |      |      |      |   [  |   ]  |        |
+ * |         |  F1  |  F2  |  F3  |  F4  |  F5  |      |           |      |      |      |      |  [   |  ]   |        |
  * |---------+------+------+------+------+------+------|           |------+------+------+------+------+------+--------|
- * |         |  F6  |  F7  |  F8  |  F9  |  F10 |      |           |      |  WUp |      |  Up  |      |   ~  |   `    |
+ * |         |  F6  |  F7  |  F8  |  F9  |  F10 |      |           |      |  !   |  @   |  #   |  $   |  %   |   `    |
  * |---------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
- * |         |  F11 |  F12 | GUI+1| GUI+2| GUI+3|------|           |------|  WDn | Left | Down | Right|   |  |        |
+ * |         |  F11 |  F12 | GUI+1| GUI+2| GUI+3|------|           |------|  ^   |  &   |  *   |  ~   |  |   |        |
  * |---------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
- * |         |      |      |      |      |      |      |           |      |      |      |   {  |   }  |   \  |        |
+ * |         |      |      |      |      |      |      |           |      |      |      |  {   |  }   |  \   |        |
  * `---------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
  *   |       |      |      |      |      |                                       | Home | End  |      |      |      |
  *   `-----------------------------------'                                       `----------------------------------'
@@ -97,14 +98,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
        // right hand
        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_LBRC, KC_RBRC, KC_TRNS,
-       KC_TRNS, KC_WH_U, KC_TRNS, KC_UP,   KC_TRNS, KC_TILD, KC_GRV,
-                KC_WH_D, KC_LEFT, KC_DOWN, KC_RGHT, KC_PIPE, KC_TRNS,
+       KC_TRNS, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_GRV,
+                KC_CIRC, KC_AMPR, KC_ASTR, KC_TILD, KC_PIPE, KC_TRNS,
        KC_TRNS, KC_TRNS, KC_TRNS, KC_LCBR, KC_RCBR, KC_BSLS, KC_TRNS,
                          KC_HOME, KC_END,  KC_0,    KC_EQL,  KC_TRNS,
        KC_TRNS, KC_TRNS,
        KC_TRNS,
        KC_TRNS, KC_PGUP, KC_PGDN
 ),
+
 /* Keymap 2: Number pad Layer
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
