@@ -63,6 +63,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TG(OTHR), KC_UP,    KC_DOWN
     ),
 
+
+
 /* Keymap 1: Symbol Layer
  *
  * ,---------------------------------------------------.           ,--------------------------------------------------.
@@ -107,6 +109,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_TRNS, KC_PGUP, KC_PGDN
 ),
 
+
+
 /* Keymap 2: Number pad Layer
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
@@ -148,6 +152,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_TRNS,
        KC_TRNS, KC_TRNS, KC_TRNS
 ),
+
+
+
 /* Keymap 3: Mouse Layer
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
@@ -190,6 +197,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_TRNS,
        KC_TRNS, KC_WBAK, KC_WFWD
 ),
+
+
+
 /* Keymap 4:
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
