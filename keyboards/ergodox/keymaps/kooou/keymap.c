@@ -110,15 +110,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 2: Number pad Layer
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
- * |        |      |      |      |      |      |      |           |      |      |NumLk |   /  |   *  |      |        |
+ * |        |      |      |      |      |      |      |           |      |      |NumLk |   *  |      |      |        |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
- * |        |      |      |      |      |      |      |           |      | Tab  |   7  |   8  |   9  |   -  |        |
+ * |        |      |      |      |      |      |      |           |   +  |      |   7  |   8  |   9  |      |        |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
- * |        |      |      |      |      |      |------|           |------| Enter|   4  |   5  |   6  |   +  |        |
- * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
- * |        |      |      |      |      |      |      |           |      | Space|   1  |   2  |   3  |   .  |        |
+ * |        |      |      |      |      |      |------|           |------|      |   4  |   5  |   6  |      |        |
+ * |--------+------+------+------+------+------|      |           |   -  |------+------+------+------+------+--------|
+ * |        |      |      |      |      |      |      |           |      |      |   1  |   2  |   3  |   /  |        |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |      |      |      |      |      |                                       |   0  |      |      |      |      |
+ *   |      |      |      |      |      |                                       |   0  |   .  |      |      |      |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
  *                                        |      |      |       |      |      |
@@ -139,11 +139,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                     KC_TRNS,
                                   KC_TRNS, KC_TRNS, KC_TRNS,
        // right hand
-       KC_TRNS,  KC_TRNS, KC_NLCK, KC_PSLS, KC_PAST, KC_TRNS, KC_TRNS,
-       KC_TRNS,  KC_TAB,  KC_P7,   KC_P8,   KC_P9,   KC_PMNS, KC_TRNS,
-                 KC_ENT,  KC_P4,   KC_P5,   KC_P6,   KC_PPLS, KC_TRNS,
-       KC_TRNS,  KC_SPC,  KC_P1,   KC_P2,   KC_P3,   KC_PDOT, KC_TRNS,
-                          KC_P0,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+       KC_TRNS,  KC_TRNS, KC_NLCK, KC_PAST, KC_TRNS, KC_TRNS, KC_TRNS,
+       KC_PPLS,  KC_TRNS,  KC_P7,   KC_P8,   KC_P9,   KC_TRNS, KC_TRNS,
+                 KC_TRNS,  KC_P4,   KC_P5,   KC_P6,   KC_TRNS, KC_TRNS,
+       KC_PMNS,  KC_TRNS,  KC_P1,   KC_P2,   KC_P3,   KC_PSLS, KC_TRNS,
+                          KC_P0,   KC_PDOT, KC_TRNS, KC_TRNS, KC_TRNS,
        KC_TRNS, KC_TRNS,
        KC_TRNS,
        KC_TRNS, KC_TRNS, KC_TRNS
