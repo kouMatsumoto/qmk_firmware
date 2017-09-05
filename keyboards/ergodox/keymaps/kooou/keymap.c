@@ -31,12 +31,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *   | ~L1  | LAlt | LGui | ~L1  | Space|                                       | Left | Right| LGui | LAlt | ~L1  |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
- *                                        | L1   | L2   |       | L2   | L1   |
+ *                                        | (*1) | (*2) |       | L2   | L1   |
  *                                 ,------|------|------|       |------+--------+------.
- *                                 |      |      | L3   |       | L3   |        |      |
+ *                                 |      |      | L3   |       | (*3) |        |      |
  *                                 | Enter| Esc  |------|       |------| Up     | Down |
- *                                 | /LSft| /LCtr| L4   |       | L4   |        |      |
+ *                                 | /LSft| /LCtr| L4   |       | (*4) |        |      |
  *                                 `--------------------'       `----------------------'
+ * (*1) -> Shift + Alt + U           (Webstorm: Toggle Case)
+ * (*2) -> Ctrl + Alt + U            (Webstorm: Toggle Camel Case)
+ * (*3) -> Ctrl + Shift + Alt + Up   (Webstorm: Move Previous Change)
+ * (*4) -> Ctrl + Shift + Alt + Down (Webstorm: Move Next Change)
  */
 // If it accepts an argument (i.e, is a function), it doesn't need KC_.
 // Otherwise, it needs KC_*
@@ -47,9 +51,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LCTL,  KC_A,           KC_S,    KC_D,     KC_F,   KC_G,
         KC_LSFT,  LT(NPAD, KC_Z), KC_X,    KC_C,     KC_V,   KC_B,   KC_ESC,
         MO(SYMB), KC_LALT,        KC_LGUI, MO(SYMB), KC_SPC,
-        TG(SYMB),      TG(NPAD),
-                       TG(MDIA),
-        SFT_T(KC_ENT), CTL_T(KC_ESC), TG(OTHR),
+        LCTL(LSFT(KC_U)), LSFT(LALT(KC_U)),
+                          TG(MDIA),
+        SFT_T(KC_ENT),    CTL_T(KC_ESC),    TG(OTHR),
 
 
         // right hand
@@ -58,9 +62,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                   KC_H,     KC_J,    KC_K,    KC_L,    KC_SCLN,           KC_RCTL,
         KC_MINS,  KC_N,     KC_M,    KC_COMM, KC_DOT,  LT(MDIA, KC_SLSH), KC_RSFT,
                             KC_LEFT, KC_RGHT, KC_RGUI, KC_RALT,           MO(SYMB),
-        TG(NPAD), TG(SYMB),
-        TG(MDIA),
-        TG(OTHR), KC_UP,    KC_DOWN
+        TG(NPAD),                  TG(SYMB),
+        LCTL(LSFT(LALT(KC_UP))),
+        LCTL(LSFT(LALT(KC_DOWN))), KC_UP, KC_DOWN
     ),
 
 
